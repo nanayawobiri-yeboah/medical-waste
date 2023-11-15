@@ -1,0 +1,2940 @@
+{
+	"info": {
+		"_postman_id": "ddd2c2f9-5bfe-4f62-af51-2695ddc8519c",
+		"name": "Medical Waste",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5495902"
+	},
+	"item": [
+		{
+			"name": "Authentication",
+			"item": [
+				{
+					"name": "Register User",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Mustapha Salam",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "oboy_staff@hotmail.com",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "0248593031",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text"
+								},
+								{
+									"key": "password_confirmation",
+									"value": "123456",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://15.236.239.177/medical_waste/api/register",
+							"protocol": "http",
+							"host": [
+								"15",
+								"236",
+								"239",
+								"177"
+							],
+							"path": [
+								"medical_waste",
+								"api",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://15.236.239.177/medical_waste/api/register",
+							"protocol": "http",
+							"host": [
+								"15",
+								"236",
+								"239",
+								"177"
+							],
+							"path": [
+								"medical_waste",
+								"api",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get User",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://15.236.239.177/medical_waste/api/register/show/:id",
+							"protocol": "http",
+							"host": [
+								"15",
+								"236",
+								"239",
+								"177"
+							],
+							"path": [
+								"medical_waste",
+								"api",
+								"register",
+								"show",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "6908ab5b-a71a-4b82-af53-c3ae7131f398"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update User",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Mustapha Abdul Salam",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "oboy_staff111@hotmail.com",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "0248593039",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "1234567",
+									"type": "text"
+								},
+								{
+									"key": "password_confirmation",
+									"value": "1234567",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://15.236.239.177/medical_waste/api/register/update/:id",
+							"protocol": "http",
+							"host": [
+								"15",
+								"236",
+								"239",
+								"177"
+							],
+							"path": [
+								"medical_waste",
+								"api",
+								"register",
+								"update",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "6908ab5b-a71a-4b82-af53-c3ae7131f398"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Signin",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "0248593031",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "1234567",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://15.236.239.177/medical_waste/api/login",
+							"protocol": "http",
+							"host": [
+								"15",
+								"236",
+								"239",
+								"177"
+							],
+							"path": [
+								"medical_waste",
+								"api",
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200-ok eg.",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "username",
+											"value": "0248593031",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "1234567",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://15.236.239.177/medical_waste/api/login",
+									"protocol": "http",
+									"host": [
+										"15",
+										"236",
+										"239",
+										"177"
+									],
+									"path": [
+										"medical_waste",
+										"api",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 03 Aug 2023 18:42:36 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.41 (Ubuntu)"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"User logged in successfully\",\n    \"data\": {\n        \"id\": \"6908ab5b-a71a-4b82-af53-c3ae7131f398\",\n        \"name\": \"Mustapha Abdul Salam\",\n        \"email\": \"oboy_staff111@hotmail.com\",\n        \"phone\": \"0248593031\",\n        \"email_verified_at\": null,\n        \"created_at\": \"2023-08-03T16:47:34.000000Z\",\n        \"updated_at\": \"2023-08-03T16:51:16.000000Z\"\n    },\n    \"meta\": {\n        \"token\": \"tDsN88uuT1L6HYvLxz2wVKCt3Joe6uVOPaALQirm\"\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Customer",
+			"item": [
+				{
+					"name": "Create Customer",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "3or6xwEewbsbo46nnJiQvjeyjEyECsyiK0wHizU5",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Mustapha Abdul Salam",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "0248593037",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "oboy_staff123@hotmail.com",
+									"type": "text"
+								},
+								{
+									"key": "region_id",
+									"value": "01b28b8d-8bfa-44b6-925b-ea1c27ccf5de",
+									"type": "text"
+								},
+								{
+									"key": "district_id",
+									"value": "03876c2b-4a4f-4ae4-bc66-24f1e879c90d",
+									"type": "text"
+								},
+								{
+									"key": "customer_type_id",
+									"value": "05c98fef-bbb2-46d7-be5e-3e27a0164cfg",
+									"type": "text"
+								},
+								{
+									"key": "contact_person_name",
+									"value": "Ubaida Salam",
+									"type": "text"
+								},
+								{
+									"key": "contact_person_phone",
+									"value": "0243981233",
+									"type": "text"
+								},
+								{
+									"key": "latitude",
+									"value": "5.6959644",
+									"type": "text"
+								},
+								{
+									"key": "longitude",
+									"value": "-0.0160964",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://15.236.239.177/medical_waste/api/customer",
+							"protocol": "http",
+							"host": [
+								"15",
+								"236",
+								"239",
+								"177"
+							],
+							"path": [
+								"medical_waste",
+								"api",
+								"customer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Customers",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "3or6xwEewbsbo46nnJiQvjeyjEyECsyiK0wHizU5",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "http://15.236.239.177/medical_waste/api/customers",
+							"protocol": "http",
+							"host": [
+								"15",
+								"236",
+								"239",
+								"177"
+							],
+							"path": [
+								"medical_waste",
+								"api",
+								"customers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Customer",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "3or6xwEewbsbo46nnJiQvjeyjEyECsyiK0wHizU5",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "http://15.236.239.177/medical_waste/api/customer/show/:id",
+							"protocol": "http",
+							"host": [
+								"15",
+								"236",
+								"239",
+								"177"
+							],
+							"path": [
+								"medical_waste",
+								"api",
+								"customer",
+								"show",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "MW618680",
+									"description": "MW618680, MW780651"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Customer- success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "default"
+									}
+								],
+								"url": {
+									"raw": "http://15.236.239.177/medical_waste/api/customer/show/:id",
+									"protocol": "http",
+									"host": [
+										"15",
+										"236",
+										"239",
+										"177"
+									],
+									"path": [
+										"medical_waste",
+										"api",
+										"customer",
+										"show",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "MW618680 "
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 04 Aug 2023 09:50:14 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.41 (Ubuntu)"
+								},
+								{
+									"key": "Vary",
+									"value": "Authorization"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "57"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Get single customer\",\n    \"data\": {\n        \"id\": \"b15b861b-2f3b-4b39-8b9a-6b5542ea6127\",\n        \"customer_id\": \"MW618680\",\n        \"name\": \"Mustapha Abdul Salam\",\n        \"phone\": \"0248593031\",\n        \"email\": \"oboy_staff@hotmail.com\",\n        \"region_id\": \"01b28b8d-8bfa-44b6-925b-ea1c27ccf5de\",\n        \"district_id\": \"27d47115-e885-4838-b55b-4231485f3a43\",\n        \"customer_type_id\": \"05c98fef-bbb2-46d7-be5e-3e27a0164cfg\",\n        \"contact_person_name\": \"Ubaida Salam\",\n        \"contact_person_phone\": \"0243981233\",\n        \"latitude\": \"5.6951756\",\n        \"longitude\": \"-0.0146741\",\n        \"registered_by\": \"6908ab5b-a71a-4b82-af53-c3ae7131f398\",\n        \"created_at\": \"2023-08-03T16:58:25.000000Z\",\n        \"updated_at\": \"2023-08-04T02:13:32.000000Z\",\n        \"request_id\": \"45334972\",\n        \"region\": {\n            \"id\": \"01b28b8d-8bfa-44b6-925b-ea1c27ccf5de\",\n            \"name\": \"Greater Accra\",\n            \"code\": \"GR\",\n            \"created_at\": \"2023-08-02T17:07:22.000000Z\",\n            \"updated_at\": \"2023-08-02T17:07:22.000000Z\"\n        },\n        \"district\": {\n            \"id\": \"27d47115-e885-4838-b55b-4231485f3a43\",\n            \"name\": \"TEMA METRO\",\n            \"region_id\": \"01b28b8d-8bfa-44b6-925b-ea1c27ccf5de\",\n            \"created_at\": \"2022-03-25T15:06:38.000000Z\",\n            \"updated_at\": \"2022-03-25T15:06:38.000000Z\"\n        },\n        \"customer_type\": {\n            \"id\": \"05c98fef-bbb2-46d7-be5e-3e27a0164cfg\",\n            \"name\": \"Government\",\n            \"created_at\": \"2023-08-03T07:25:05.000000Z\",\n            \"updated_at\": \"2023-08-03T07:25:07.000000Z\"\n        }\n    }\n}"
+						},
+						{
+							"name": "Get Customer- 422- no pending request",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "default"
+									}
+								],
+								"url": {
+									"raw": "http://15.236.239.177/medical_waste/api/customer/show/:id",
+									"protocol": "http",
+									"host": [
+										"15",
+										"236",
+										"239",
+										"177"
+									],
+									"path": [
+										"medical_waste",
+										"api",
+										"customer",
+										"show",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "MW780651",
+											"description": "MW618680, MW780651"
+										}
+									]
+								}
+							},
+							"status": "Unprocessable Content",
+							"code": 422,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 04 Aug 2023 09:52:10 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.41 (Ubuntu)"
+								},
+								{
+									"key": "Vary",
+									"value": "Authorization"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Customer has no pending request\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Update Customer",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "3or6xwEewbsbo46nnJiQvjeyjEyECsyiK0wHizU5",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Mustapha Abdul Salam",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "0248593031",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "oboy_staff@hotmail.com",
+									"type": "text"
+								},
+								{
+									"key": "region_id",
+									"value": "01b28b8d-8bfa-44b6-925b-ea1c27ccf5de",
+									"type": "text"
+								},
+								{
+									"key": "district_id",
+									"value": "27d47115-e885-4838-b55b-4231485f3a43",
+									"type": "text"
+								},
+								{
+									"key": "customer_type_id",
+									"value": "05c98fef-bbb2-46d7-be5e-3e27a0164cfg",
+									"type": "text"
+								},
+								{
+									"key": "contact_person_name",
+									"value": "Ubaida Salam",
+									"type": "text"
+								},
+								{
+									"key": "contact_person_phone",
+									"value": "0243981233",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://15.236.239.177/medical_waste/api/customer/update/:id",
+							"protocol": "http",
+							"host": [
+								"15",
+								"236",
+								"239",
+								"177"
+							],
+							"path": [
+								"medical_waste",
+								"api",
+								"customer",
+								"update",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "MW618680"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Customer Type",
+			"item": [
+				{
+					"name": "Get Customer Types",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://15.236.239.177/medical_waste/api/customer-types",
+							"protocol": "http",
+							"host": [
+								"15",
+								"236",
+								"239",
+								"177"
+							],
+							"path": [
+								"medical_waste",
+								"api",
+								"customer-types"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Customer Request",
+			"item": [
+				{
+					"name": "Create Request",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "customer_id",
+									"value": "MW618680",
+									"type": "text"
+								},
+								{
+									"key": "pickup_date",
+									"value": "2023-08-11",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://15.236.239.177/medical_waste/api/customer-request",
+							"protocol": "http",
+							"host": [
+								"15",
+								"236",
+								"239",
+								"177"
+							],
+							"path": [
+								"medical_waste",
+								"api",
+								"customer-request"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Create Request.succ.eg",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "customer_id",
+											"value": "MW618680",
+											"type": "text"
+										},
+										{
+											"key": "pickup_date",
+											"value": "2023-08-10",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://15.236.239.177/medical_waste/api/customer-request",
+									"protocol": "http",
+									"host": [
+										"15",
+										"236",
+										"239",
+										"177"
+									],
+									"path": [
+										"medical_waste",
+										"api",
+										"customer-request"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 17 Aug 2023 16:03:53 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.41 (Ubuntu)"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Customer request created successfully\",\n    \"data\": {\n        \"customer_id\": \"MW618680\",\n        \"pickup_date\": \"2023-08-10\",\n        \"status\": \"Pending\",\n        \"pickup_date_status\": \"Pending\",\n        \"request_id\": 74518726,\n        \"id\": \"be9ada58-a6e8-4cad-9034-f7cf2c1263f8\",\n        \"updated_at\": \"2023-08-17T16:03:53.000000Z\",\n        \"created_at\": \"2023-08-17T16:03:53.000000Z\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Get Requests",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://15.236.239.177/medical_waste/api/customer-requests",
+							"protocol": "http",
+							"host": [
+								"15",
+								"236",
+								"239",
+								"177"
+							],
+							"path": [
+								"medical_waste",
+								"api",
+								"customer-requests"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://15.236.239.177/medical_waste/api/customer-request/show/:id",
+							"protocol": "http",
+							"host": [
+								"15",
+								"236",
+								"239",
+								"177"
+							],
+							"path": [
+								"medical_waste",
+								"api",
+								"customer-request",
+								"show",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "92c364ec-b019-421d-9b30-d2908e406690"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Request",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "customer_id",
+									"value": "MW618680",
+									"type": "text"
+								},
+								{
+									"key": "pickup_date",
+									"value": "2023-08-05",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://15.236.239.177/medical_waste/api/customer-request/update/:id",
+							"protocol": "http",
+							"host": [
+								"15",
+								"236",
+								"239",
+								"177"
+							],
+							"path": [
+								"medical_waste",
+								"api",
+								"customer-request",
+								"update",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "35651221"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Invoice",
+			"item": [
+				{
+					"name": "Create Invoice",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "3or6xwEewbsbo46nnJiQvjeyjEyECsyiK0wHizU5",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "customer_id",
+									"value": "MW618680",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://15.236.239.177/medical_waste/api/invoice",
+							"protocol": "http",
+							"host": [
+								"15",
+								"236",
+								"239",
+								"177"
+							],
+							"path": [
+								"medical_waste",
+								"api",
+								"invoice"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Invoices",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "3or6xwEewbsbo46nnJiQvjeyjEyECsyiK0wHizU5",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "http://15.236.239.177/medical_waste/api/invoices",
+							"protocol": "http",
+							"host": [
+								"15",
+								"236",
+								"239",
+								"177"
+							],
+							"path": [
+								"medical_waste",
+								"api",
+								"invoices"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Invoice",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "3or6xwEewbsbo46nnJiQvjeyjEyECsyiK0wHizU5",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "http://15.236.239.177/medical_waste/api/invoice/show/:id",
+							"protocol": "http",
+							"host": [
+								"15",
+								"236",
+								"239",
+								"177"
+							],
+							"path": [
+								"medical_waste",
+								"api",
+								"invoice",
+								"show",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "dec0676e-a79d-495f-9854-60b7351f11fa"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Service Status",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "3or6xwEewbsbo46nnJiQvjeyjEyECsyiK0wHizU5",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "http://15.236.239.177/medical_waste/api/invoice/service-status/:id",
+							"protocol": "http",
+							"host": [
+								"15",
+								"236",
+								"239",
+								"177"
+							],
+							"path": [
+								"medical_waste",
+								"api",
+								"invoice",
+								"service-status",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "4237371979"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Invoice",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "3or6xwEewbsbo46nnJiQvjeyjEyECsyiK0wHizU5",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "customer_id",
+									"value": "MW110343",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://15.236.239.177/medical_waste/api/invoice/update/:id",
+							"protocol": "http",
+							"host": [
+								"15",
+								"236",
+								"239",
+								"177"
+							],
+							"path": [
+								"medical_waste",
+								"api",
+								"invoice",
+								"update",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "9287613867"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Payment",
+			"item": [
+				{
+					"name": "Create Payment",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "3or6xwEewbsbo46nnJiQvjeyjEyECsyiK0wHizU5",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "invoice_no",
+									"value": "4237371979",
+									"type": "text"
+								},
+								{
+									"key": "customer_id",
+									"value": "MW618680",
+									"type": "text"
+								},
+								{
+									"key": "amount",
+									"value": "20",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://15.236.239.177/medical_waste/api/payment",
+							"protocol": "http",
+							"host": [
+								"15",
+								"236",
+								"239",
+								"177"
+							],
+							"path": [
+								"medical_waste",
+								"api",
+								"payment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Payments",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "3or6xwEewbsbo46nnJiQvjeyjEyECsyiK0wHizU5",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "http://15.236.239.177/medical_waste/api/payments",
+							"protocol": "http",
+							"host": [
+								"15",
+								"236",
+								"239",
+								"177"
+							],
+							"path": [
+								"medical_waste",
+								"api",
+								"payments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Payment",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "3or6xwEewbsbo46nnJiQvjeyjEyECsyiK0wHizU5",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "http://15.236.239.177/medical_waste/api/payment/show/:id",
+							"protocol": "http",
+							"host": [
+								"15",
+								"236",
+								"239",
+								"177"
+							],
+							"path": [
+								"medical_waste",
+								"api",
+								"payment",
+								"show",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "4237371979"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Payment",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "3or6xwEewbsbo46nnJiQvjeyjEyECsyiK0wHizU5",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "invoice_no",
+									"value": "4237371979",
+									"type": "text"
+								},
+								{
+									"key": "customer_id",
+									"value": "MW618680",
+									"type": "text"
+								},
+								{
+									"key": "amount",
+									"value": "50",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://15.236.239.177/medical_waste/api/payment/update/:id",
+							"protocol": "http",
+							"host": [
+								"15",
+								"236",
+								"239",
+								"177"
+							],
+							"path": [
+								"medical_waste",
+								"api",
+								"payment",
+								"update",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "4237371979"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Pickup",
+			"item": [
+				{
+					"name": "Create Pickup",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "3or6xwEewbsbo46nnJiQvjeyjEyECsyiK0wHizU5",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "customer_id",
+									"value": "MW618680",
+									"type": "text"
+								},
+								{
+									"key": "vehicle_no",
+									"value": "AS 1234 22",
+									"type": "text"
+								},
+								{
+									"key": "weight",
+									"value": "20",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://15.236.239.177/medical_waste/api/pickup",
+							"protocol": "http",
+							"host": [
+								"15",
+								"236",
+								"239",
+								"177"
+							],
+							"path": [
+								"medical_waste",
+								"api",
+								"pickup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Pickup2",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "3or6xwEewbsbo46nnJiQvjeyjEyECsyiK0wHizU5",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "request_id",
+									"value": "35651221",
+									"type": "text"
+								},
+								{
+									"key": "vehicle_no",
+									"value": "AS 1234 22",
+									"type": "text"
+								},
+								{
+									"key": "weight",
+									"value": "20",
+									"type": "text"
+								},
+								{
+									"key": "latitude",
+									"value": "5.6880771",
+									"type": "text"
+								},
+								{
+									"key": "longitude",
+									"value": "-0.0172327",
+									"type": "text"
+								},
+								{
+									"key": "waste_type_id",
+									"value": "046e8d84-7eec-4e3f-a2a3-d04c4c2e7b6c",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://15.236.239.177/medical_waste/api/pickup",
+							"protocol": "http",
+							"host": [
+								"15",
+								"236",
+								"239",
+								"177"
+							],
+							"path": [
+								"medical_waste",
+								"api",
+								"pickup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Pickups",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "3or6xwEewbsbo46nnJiQvjeyjEyECsyiK0wHizU5",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "http://15.236.239.177/medical_waste/api/pickups",
+							"protocol": "http",
+							"host": [
+								"15",
+								"236",
+								"239",
+								"177"
+							],
+							"path": [
+								"medical_waste",
+								"api",
+								"pickups"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Pickup",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "3or6xwEewbsbo46nnJiQvjeyjEyECsyiK0wHizU5",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "http://15.236.239.177/medical_waste/api/pickup/show/:id",
+							"protocol": "http",
+							"host": [
+								"15",
+								"236",
+								"239",
+								"177"
+							],
+							"path": [
+								"medical_waste",
+								"api",
+								"pickup",
+								"show",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "5194fefa-50b7-4d47-8cef-a8a3cb7a070c"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Pickup",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "3or6xwEewbsbo46nnJiQvjeyjEyECsyiK0wHizU5",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "customer_id",
+									"value": "MW618680",
+									"type": "text"
+								},
+								{
+									"key": "vehicle_no",
+									"value": "AS 1234 21",
+									"type": "text"
+								},
+								{
+									"key": "weight",
+									"value": "30",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "Approved",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://15.236.239.177/medical_waste/api/pickup/update/:id",
+							"protocol": "http",
+							"host": [
+								"15",
+								"236",
+								"239",
+								"177"
+							],
+							"path": [
+								"medical_waste",
+								"api",
+								"pickup",
+								"update",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "5194fefa-50b7-4d47-8cef-a8a3cb7a070c"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Rate",
+			"item": [
+				{
+					"name": "Create Rate",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "3or6xwEewbsbo46nnJiQvjeyjEyECsyiK0wHizU5",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "customer_id",
+									"value": "MW618680",
+									"type": "text"
+								},
+								{
+									"key": "rate",
+									"value": "20",
+									"type": "text"
+								},
+								{
+									"key": "rate_type_id",
+									"value": "16f47264-61a1-45c9-bdd6-9ac1019e76a6",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://15.236.239.177/medical_waste/api/rate",
+							"protocol": "http",
+							"host": [
+								"15",
+								"236",
+								"239",
+								"177"
+							],
+							"path": [
+								"medical_waste",
+								"api",
+								"rate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Rates",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "3or6xwEewbsbo46nnJiQvjeyjEyECsyiK0wHizU5",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "http://15.236.239.177/medical_waste/api/rates",
+							"protocol": "http",
+							"host": [
+								"15",
+								"236",
+								"239",
+								"177"
+							],
+							"path": [
+								"medical_waste",
+								"api",
+								"rates"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Rate",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "3or6xwEewbsbo46nnJiQvjeyjEyECsyiK0wHizU5",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "http://15.236.239.177/medical_waste/api/rate/show/:id",
+							"protocol": "http",
+							"host": [
+								"15",
+								"236",
+								"239",
+								"177"
+							],
+							"path": [
+								"medical_waste",
+								"api",
+								"rate",
+								"show",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "MW618680"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Rate",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "3or6xwEewbsbo46nnJiQvjeyjEyECsyiK0wHizU5",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "customer_id",
+									"value": "MW618680",
+									"type": "text"
+								},
+								{
+									"key": "rate",
+									"value": "20",
+									"type": "text"
+								},
+								{
+									"key": "rate_type_id",
+									"value": "637316cd-83af-4219-be5e-73fe6231f808",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://15.236.239.177/medical_waste/api/rate/update/:id",
+							"protocol": "http",
+							"host": [
+								"15",
+								"236",
+								"239",
+								"177"
+							],
+							"path": [
+								"medical_waste",
+								"api",
+								"rate",
+								"update",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "MW618680"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Rate Type",
+			"item": [
+				{
+					"name": "Get Rates",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://15.236.239.177/medical_waste/api/rate-types",
+							"protocol": "http",
+							"host": [
+								"15",
+								"236",
+								"239",
+								"177"
+							],
+							"path": [
+								"medical_waste",
+								"api",
+								"rate-types"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Vehicle",
+			"item": [
+				{
+					"name": "Create Vehicle",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "3or6xwEewbsbo46nnJiQvjeyjEyECsyiK0wHizU5",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "vehicle_no",
+									"value": "AS 1234 21",
+									"type": "text"
+								},
+								{
+									"key": "make",
+									"value": "Toyota",
+									"type": "text"
+								},
+								{
+									"key": "model",
+									"value": "Camry",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://15.236.239.177/medical_waste/api/vehicle",
+							"protocol": "http",
+							"host": [
+								"15",
+								"236",
+								"239",
+								"177"
+							],
+							"path": [
+								"medical_waste",
+								"api",
+								"vehicle"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Vehicles",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "3or6xwEewbsbo46nnJiQvjeyjEyECsyiK0wHizU5",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "http://15.236.239.177/medical_waste/api/vehicles",
+							"protocol": "http",
+							"host": [
+								"15",
+								"236",
+								"239",
+								"177"
+							],
+							"path": [
+								"medical_waste",
+								"api",
+								"vehicles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Vehicle",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "3or6xwEewbsbo46nnJiQvjeyjEyECsyiK0wHizU5",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "http://15.236.239.177/medical_waste/api/vehicle/show/:id",
+							"protocol": "http",
+							"host": [
+								"15",
+								"236",
+								"239",
+								"177"
+							],
+							"path": [
+								"medical_waste",
+								"api",
+								"vehicle",
+								"show",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "AS 1234 21"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Vehicle",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "3or6xwEewbsbo46nnJiQvjeyjEyECsyiK0wHizU5",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "vehicle_no",
+									"value": "AS 1234 22",
+									"type": "text"
+								},
+								{
+									"key": "make",
+									"value": "Toyota",
+									"type": "text"
+								},
+								{
+									"key": "model",
+									"value": "Highlander",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://15.236.239.177/medical_waste/api/vehicle/update/:id",
+							"protocol": "http",
+							"host": [
+								"15",
+								"236",
+								"239",
+								"177"
+							],
+							"path": [
+								"medical_waste",
+								"api",
+								"vehicle",
+								"update",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "AS 1234 21"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Region",
+			"item": [
+				{
+					"name": "Get Regions",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://15.236.239.177/medical_waste/api/regions",
+							"protocol": "http",
+							"host": [
+								"15",
+								"236",
+								"239",
+								"177"
+							],
+							"path": [
+								"medical_waste",
+								"api",
+								"regions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Region",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://15.236.239.177/medical_waste/api/region/show/:id",
+							"protocol": "http",
+							"host": [
+								"15",
+								"236",
+								"239",
+								"177"
+							],
+							"path": [
+								"medical_waste",
+								"api",
+								"region",
+								"show",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "d3af0d9c-e533-46db-a9f8-ee48d9211d26"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Regions with Districts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://15.236.239.177/medical_waste/api/regions-districts",
+							"protocol": "http",
+							"host": [
+								"15",
+								"236",
+								"239",
+								"177"
+							],
+							"path": [
+								"medical_waste",
+								"api",
+								"regions-districts"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "District",
+			"item": [
+				{
+					"name": "Get Districts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://15.236.239.177/medical_waste/api/districts",
+							"protocol": "http",
+							"host": [
+								"15",
+								"236",
+								"239",
+								"177"
+							],
+							"path": [
+								"medical_waste",
+								"api",
+								"districts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get District",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://15.236.239.177/medical_waste/api/district/show/:id",
+							"protocol": "http",
+							"host": [
+								"15",
+								"236",
+								"239",
+								"177"
+							],
+							"path": [
+								"medical_waste",
+								"api",
+								"district",
+								"show",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "013cfef6-08bc-422d-84fc-97308604b0c3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Districts By Region",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://15.236.239.177/medical_waste/api/districts/:region_id",
+							"protocol": "http",
+							"host": [
+								"15",
+								"236",
+								"239",
+								"177"
+							],
+							"path": [
+								"medical_waste",
+								"api",
+								"districts",
+								":region_id"
+							],
+							"variable": [
+								{
+									"key": "region_id",
+									"value": "ba2b513d-dc8c-445e-87f1-9307b0f39888"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Waste Type",
+			"item": [
+				{
+					"name": "Create Waste Type",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "3or6xwEewbsbo46nnJiQvjeyjEyECsyiK0wHizU5",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Pathological",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://15.236.239.177/medical_waste/api/waste-type",
+							"protocol": "http",
+							"host": [
+								"15",
+								"236",
+								"239",
+								"177"
+							],
+							"path": [
+								"medical_waste",
+								"api",
+								"waste-type"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Waste Types",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "3or6xwEewbsbo46nnJiQvjeyjEyECsyiK0wHizU5",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://15.236.239.177/medical_waste/api/waste-types",
+							"protocol": "http",
+							"host": [
+								"15",
+								"236",
+								"239",
+								"177"
+							],
+							"path": [
+								"medical_waste",
+								"api",
+								"waste-types"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success.eg",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://15.236.239.177/medical_waste/api/waste-types",
+									"protocol": "http",
+									"host": [
+										"15",
+										"236",
+										"239",
+										"177"
+									],
+									"path": [
+										"medical_waste",
+										"api",
+										"waste-types"
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 16 Aug 2023 16:52:23 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Apache/2.4.41 (Ubuntu)"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5, max=100"
+								},
+								{
+									"key": "Connection",
+									"value": "Keep-Alive"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Unauthenticated.\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Get Waste Type",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "3or6xwEewbsbo46nnJiQvjeyjEyECsyiK0wHizU5",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://15.236.239.177/medical_waste/api/waste-type/show/:id",
+							"protocol": "http",
+							"host": [
+								"15",
+								"236",
+								"239",
+								"177"
+							],
+							"path": [
+								"medical_waste",
+								"api",
+								"waste-type",
+								"show",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "b2642d5f-c295-43ef-9980-0fa26a795d19"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Waste Type",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "3or6xwEewbsbo46nnJiQvjeyjEyECsyiK0wHizU5",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Infectious",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://15.236.239.177/medical_waste/api/waste-type/update/:id",
+							"protocol": "http",
+							"host": [
+								"15",
+								"236",
+								"239",
+								"177"
+							],
+							"path": [
+								"medical_waste",
+								"api",
+								"waste-type",
+								"update",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "b2642d5f-c295-43ef-9980-0fa26a795d19"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Fuel Purchased",
+			"item": [
+				{
+					"name": "Create Fuel",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "3or6xwEewbsbo46nnJiQvjeyjEyECsyiK0wHizU5",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "vehicle_no",
+									"value": "AS 1234 22",
+									"type": "text"
+								},
+								{
+									"key": "litres",
+									"value": "120",
+									"type": "text"
+								},
+								{
+									"key": "amount",
+									"value": "20",
+									"type": "text"
+								},
+								{
+									"key": "mileage",
+									"value": "123",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://15.236.239.177/medical_waste/api/fuel-purchased",
+							"protocol": "http",
+							"host": [
+								"15",
+								"236",
+								"239",
+								"177"
+							],
+							"path": [
+								"medical_waste",
+								"api",
+								"fuel-purchased"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Fuels",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "3or6xwEewbsbo46nnJiQvjeyjEyECsyiK0wHizU5",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://15.236.239.177/medical_waste/api/fuel-purchaseds",
+							"protocol": "http",
+							"host": [
+								"15",
+								"236",
+								"239",
+								"177"
+							],
+							"path": [
+								"medical_waste",
+								"api",
+								"fuel-purchaseds"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Fuel",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "3or6xwEewbsbo46nnJiQvjeyjEyECsyiK0wHizU5",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://15.236.239.177/medical_waste/api/fuel-purchased/show/:id",
+							"protocol": "http",
+							"host": [
+								"15",
+								"236",
+								"239",
+								"177"
+							],
+							"path": [
+								"medical_waste",
+								"api",
+								"fuel-purchased",
+								"show",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "efaf6359-2ea0-4053-9669-016d00497df2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Fuel",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "3or6xwEewbsbo46nnJiQvjeyjEyECsyiK0wHizU5",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "vehicle_no",
+									"value": "AS 1234 22",
+									"type": "text"
+								},
+								{
+									"key": "litres",
+									"value": "200",
+									"type": "text"
+								},
+								{
+									"key": "amount",
+									"value": "30",
+									"type": "text"
+								},
+								{
+									"key": "mileage",
+									"value": "150",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://15.236.239.177/medical_waste/api/fuel-purchased/update/:id",
+							"protocol": "http",
+							"host": [
+								"15",
+								"236",
+								"239",
+								"177"
+							],
+							"path": [
+								"medical_waste",
+								"api",
+								"fuel-purchased",
+								"update",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "efaf6359-2ea0-4053-9669-016d00497df2"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
